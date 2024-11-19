@@ -23876,7 +23876,7 @@ var require_action = __commonJS({
           owner,
           repo,
           event_type: eventType,
-          client_payload: JSON.parse(clientPayload)
+          client_payload: clientPayload
         });
         core.info(`Successfully triggered ${eventType} event`);
       } catch (error) {
