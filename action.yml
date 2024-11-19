@@ -1,4 +1,4 @@
-name: "repository-dispatch"
+name: "Repository Dispatch Event"
 description: "Custom action to trigger workflow dispatch events"
 author: "Diego Maroto"
 
@@ -9,10 +9,12 @@ branding:
 inputs:
   token:
     description: "GitHub token with repo scope"
-    required: true
+    default: ${{ github.token }}
+  repository:
+    description: "Repository to trigger the event in"
+    default: ${{ github.repository }}
   event-type:
     description: "Type of event to trigger"
-    required: true
   client-payload:
     description: "JSON payload to send with the event"
     required: false
