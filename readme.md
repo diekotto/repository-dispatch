@@ -2,7 +2,7 @@
 
 Custom GitHub Action to trigger repository dispatch events programmatically.
 
-[![Tests](https://github.com/diekotto/repository-dispatch/actions/workflows/test.yml/badge.svg)]
+![Tests](https://github.com/diekotto/repository-dispatch/actions/workflows/test.yml/badge.svg)
 
 ## Usage
 
