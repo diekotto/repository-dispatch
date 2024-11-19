@@ -41,7 +41,7 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - uses: your-username/repository-dispatch@v1
+      - uses: diekotto/repository-dispatch@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           event-type: deploy
@@ -55,7 +55,7 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - uses: your-username/repository-dispatch@v1
+      - uses: diekotto/repository-dispatch@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           event-type: custom-event
