@@ -1,6 +1,7 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
 const { inspect } = require("util");
+const { getErrorMessage, hasErrorStatus } = require("./errors");
 
 async function run() {
   try {
