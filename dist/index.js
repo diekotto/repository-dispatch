@@ -23843,12 +23843,27 @@ var require_github = __commonJS({
   }
 });
 
+// src/errors.js
+var require_errors2 = __commonJS({
+  "src/errors.js"(exports2, module2) {
+    function hasErrorStatus(error) {
+      return typeof error.status === "number";
+    }
+    function getErrorMessage(error) {
+      if (error instanceof Error) return error.message;
+      return String(error);
+    }
+    module2.exports = { hasErrorStatus, getErrorMessage };
+  }
+});
+
 // src/action.js
 var require_action = __commonJS({
   "src/action.js"(exports2, module2) {
     var core = require_core();
     var github = require_github();
     var { inspect } = require("util");
+    var { getErrorMessage, hasErrorStatus } = require_errors2();
     async function run2() {
       try {
         const token = core.getInput("token");
