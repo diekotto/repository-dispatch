@@ -23848,6 +23848,7 @@ var require_action = __commonJS({
   "src/action.js"(exports2, module2) {
     var core = require_core();
     var github = require_github();
+    var { inspect } = require("util");
     async function run2() {
       try {
         const token = core.getInput("token");
