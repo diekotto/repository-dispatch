@@ -1,2 +1,2 @@
-const { run } = require("./index");
+const { run } = require("./action");
 run();
