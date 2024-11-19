@@ -68,4 +68,4 @@ jobs:
 
 ## License
 
-MIT © Diego Maroto
+[MIT](LICENSE)
