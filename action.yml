@@ -1,0 +1,27 @@
+name: "repository-dispatch"
+description: "Custom action to trigger workflow dispatch events"
+author: "Diego Maroto"
+
+branding:
+  icon: "cpu"
+  color: "blue"
+
+inputs:
+  token:
+    description: "GitHub token with repo scope"
+    required: true
+  event-type:
+    description: "Type of event to trigger"
+    required: true
+  client-payload:
+    description: "JSON payload to send with the event"
+    required: false
+    default: "{}"
+
+outputs:
+  result:
+    description: "Result of the action"
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
